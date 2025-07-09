@@ -2,7 +2,7 @@ export const config = {
   api: {
     baseUrl: 'https://api.themoviedb.org/3',
     imageBaseUrl: 'https://image.tmdb.org/t/p',
-    backendUrl: 'http://localhost:3001', // Para desenvolvimento local
+    backendUrl: 'https://3035-production.up.railway.app', // URL do backend em produção
   },
   app: {
     name: '3035 Filmes',
