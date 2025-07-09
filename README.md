@@ -1,5 +1,7 @@
 # 3035 Filmes
 
+🔗 [Acesse o projeto online](https://3035-qnmk.vercel.app/)
+
 ## Sobre o Projeto
 
 O objetivo deste projeto é desenvolver uma aplicação completa para listar filmes ordenados pela nota e exibir detalhes utilizando a API do TMDB (The Movie Database). O projeto inclui um frontend web e um aplicativo mobile, ambos consumindo uma API própria desenvolvida para centralizar a lógica de negócio e facilitar a manutenção.
