@@ -14,7 +14,7 @@ export class TMDBMovieRepository implements IMovieRepository {
     const res = await fetch(url);
     const data = await res.json();
 
-    return data.results.map(this.dtoToMovie);
+    return data?.results?.map(this.dtoToMovie) || [];
   }
 
   private dtoToMovie(dto: MovieApiResponse): Movie {
