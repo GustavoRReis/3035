@@ -34,6 +34,7 @@
   max-width: 340px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .movie-details-poster {
@@ -54,7 +55,7 @@
 }
 
 .movie-title {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin: 0 0 4px 0;
   color: #ffffff;
@@ -162,6 +163,7 @@
     gap: 24px;
     padding: 18px 6vw;
     margin-top: 32px;
+    align-items: center;
   }
   .movie-details-poster-col {
     min-width: 180px;
@@ -169,5 +171,14 @@
   }
   .movie-details-poster {
     max-width: 220px;
+  }
+  
+  .movie-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .movie-year {
+    font-size: 1.2rem;
   }
 } 

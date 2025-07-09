@@ -3,21 +3,25 @@ import { Movie } from '../../domain/entities/Movie.js';
 import { MovieApiResponse } from '../../types/MovieApiResponse.js';
 
 const API_CONFIG = {
-  TMDB_API_KEY: process.env.TMDB_API_KEY || process.env.VITE_TMDB_API_KEY || '6b8b8aadfe9effd572a474adf7e24a84',
-  TMDB_BASE_URL: process.env.TMDB_BASE_URL || process.env.VITE_TMDB_BASE_URL || 'https://api.themoviedb.org/3',
-  TMDB_LANGUAGE: process.env.TMDB_LANGUAGE || process.env.VITE_TMDB_LANGUAGE || 'pt-BR',
+  TMDB_API_KEY:
+    process.env.TMDB_API_KEY ||
+    process.env.VITE_TMDB_API_KEY ||
+    '6b8b8aadfe9effd572a474adf7e24a84',
+  TMDB_BASE_URL:
+    process.env.TMDB_BASE_URL ||
+    process.env.VITE_TMDB_BASE_URL ||
+    'https://api.themoviedb.org/3',
+  TMDB_LANGUAGE:
+    process.env.TMDB_LANGUAGE || process.env.VITE_TMDB_LANGUAGE || 'pt-BR',
 };
 
 export class TMDBMovieRepository implements IMovieRepository {
   async getTrending(): Promise<Movie[]> {
     const url = `${API_CONFIG.TMDB_BASE_URL}/trending/movie/week?api_key=${API_CONFIG.TMDB_API_KEY}&language=${API_CONFIG.TMDB_LANGUAGE}`;
-    console.log('TMDB URL:', url);
-    
+
     const res = await fetch(url);
-    console.log('TMDB Response status:', res.status);
-    
+
     const data = await res.json();
-    console.log('TMDB Response data:', JSON.stringify(data, null, 2));
 
     if (!data?.results) {
       console.error('No results found in TMDB response');
