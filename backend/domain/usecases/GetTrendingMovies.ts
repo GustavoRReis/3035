@@ -1,5 +1,5 @@
-import { IMovieRepository } from '../repositories/IMovieRepository';
-import { Movie } from '../entities/Movie';
+import { IMovieRepository } from '../repositories/IMovieRepository.js';
+import { Movie } from '../entities/Movie.js';
 
 export class GetTrendingMovies {
   constructor(private movieRepository: IMovieRepository) {}

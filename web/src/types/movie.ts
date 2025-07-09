@@ -1,5 +1,18 @@
-// Re-export da entidade Movie do backend
-export { Movie } from '@backend/domain/entities/Movie';
+export interface Movie {
+  id: number;
+  title: string;
+  posterPath: string;
+  releaseDate: Date;
+  voteAverage: number;
+  overview: string;
+  backdropPath?: string;
+  originalTitle?: string;
+  voteCount?: number;
+  popularity?: number;
+  adult?: boolean;
+  video?: boolean;
+  genreIds?: number[];
+}
 
 export interface MovieApiResponse {
   id: number;

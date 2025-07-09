@@ -18,7 +18,7 @@ export const MovieProvider: React.FC<MovieProviderProps> = ({ children }) => {
     setLoading(true);
     setError(null);
     try {
-      const trendingMovies = await movieService.getTrending.execute();
+      const trendingMovies = await movieService.getTrending();
       setMovies(trendingMovies);
       setFilteredMovies(trendingMovies);
     } catch {
@@ -28,7 +28,6 @@ export const MovieProvider: React.FC<MovieProviderProps> = ({ children }) => {
     }
   };
 
-  // Filtra os filmes baseado na busca
   useEffect(() => {
     if (!searchQuery.trim()) {
       setFilteredMovies(movies);
@@ -36,14 +35,13 @@ export const MovieProvider: React.FC<MovieProviderProps> = ({ children }) => {
     }
 
     const query = searchQuery.toLowerCase().trim();
-    const filtered = movies.filter(movie => 
+    const filtered = movies.filter(movie =>
       movie.title.toLowerCase().includes(query)
     );
-    
+
     setFilteredMovies(filtered);
   }, [searchQuery, movies]);
 
-  // Carrega filmes em tendência na inicialização
   useEffect(() => {
     fetchTrendingMovies();
   }, []);
@@ -64,8 +62,8 @@ export const MovieProvider: React.FC<MovieProviderProps> = ({ children }) => {
   };
 
   return (
-    <MovieContext.Provider value={value}>
-      {children}
+    <MovieContext.Provider value={ value }>
+      { children }
     </MovieContext.Provider>
   );
 }; 

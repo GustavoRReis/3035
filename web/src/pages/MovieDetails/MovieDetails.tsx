@@ -33,7 +33,6 @@ const MovieDetails: React.FC = () => {
     });
   };
 
-  // Banner de fundo (backdrop ou poster)
   const bannerUrl = movie.backdropPath
     ? `https://image.tmdb.org/t/p/original${movie.backdropPath}`
     : `https://image.tmdb.org/t/p/original${movie.posterPath}`;
@@ -68,10 +67,8 @@ const MovieDetails: React.FC = () => {
               </span>
               <span className="vote-count">{movie.voteCount?.toLocaleString('pt-BR') || 'N/A'} votos</span>
               <span className="release-date">{formatReleaseDate(movie.releaseDate)}</span>
-              {/* Gêneros, duração, classificação indicativa, etc */}
             </div>
             <div className="movie-details-actions-row">
-              {/* Botões de ação: favoritar, assistir trailer, etc */}
             </div>
             <h2 className="section-title">Sinopse</h2>
             <p className="movie-overview">{movie.overview}</p>

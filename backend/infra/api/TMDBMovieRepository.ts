@@ -1,11 +1,11 @@
-import { IMovieRepository } from '../../domain/repositories/IMovieRepository';
-import { Movie } from '../../domain/entities/Movie';
-import { MovieApiResponse } from '../../types/MovieApiResponse';
+import { IMovieRepository } from '../../domain/repositories/IMovieRepository.js';
+import { Movie } from '../../domain/entities/Movie.js';
+import { MovieApiResponse } from '../../types/MovieApiResponse.js';
 
 const API_CONFIG = {
-  TMDB_API_KEY: '6b8b8aadfe9effd572a474adf7e24a84',
-  TMDB_BASE_URL: 'https://api.themoviedb.org/3',
-  TMDB_LANGUAGE: 'pt-BR',
+  TMDB_API_KEY: process.env.TMDB_API_KEY || process.env.VITE_TMDB_API_KEY || '6b8b8aadfe9effd572a474adf7e24a84',
+  TMDB_BASE_URL: process.env.TMDB_BASE_URL || process.env.VITE_TMDB_BASE_URL || 'https://api.themoviedb.org/3',
+  TMDB_LANGUAGE: process.env.TMDB_LANGUAGE || process.env.VITE_TMDB_LANGUAGE || 'pt-BR',
 };
 
 export class TMDBMovieRepository implements IMovieRepository {

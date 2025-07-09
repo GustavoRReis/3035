@@ -6,7 +6,22 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@backend': path.resolve(__dirname, '../backend'),
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  define: {
+    'process.env.VITE_BACKEND_URL': JSON.stringify(process.env.VITE_BACKEND_URL || 'http://localhost:3001'),
+  },
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          mui: ['@mui/material', '@mui/icons-material'],
+        },
+      },
     },
   },
 })

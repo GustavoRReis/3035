@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd web && npm run build",
+  "outputDirectory": "web/dist",
+  "framework": "vite",
+  "installCommand": "cd web && npm install",
+  "functions": {
+    "web/dist/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+} 

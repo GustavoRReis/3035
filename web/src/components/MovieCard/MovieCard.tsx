@@ -24,7 +24,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie, onClick }) => {
           alt={ movie.title }
           className="movie-poster"
         />
-        <span className={ `rating-badge-tmdb ${isHighRated ? 'high-rated' : 'low-rated'}` }>{ movie.voteAverage.toFixed(1) }</span>
+        <span className={ `rating-badge-tmdb ${movie.voteAverage === 0 ? 'upcoming' : isHighRated ? 'high' : 'low'}` }>{ movie.voteAverage.toFixed(1) }</span>
         {(() => {
           if (movie.voteAverage === 0) {
             return <span className="badge-trending-tmdb upcoming">Em breve</span>;
