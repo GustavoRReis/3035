@@ -11,10 +11,20 @@ const API_CONFIG = {
 export class TMDBMovieRepository implements IMovieRepository {
   async getTrending(): Promise<Movie[]> {
     const url = `${API_CONFIG.TMDB_BASE_URL}/trending/movie/week?api_key=${API_CONFIG.TMDB_API_KEY}&language=${API_CONFIG.TMDB_LANGUAGE}`;
+    console.log('TMDB URL:', url);
+    
     const res = await fetch(url);
+    console.log('TMDB Response status:', res.status);
+    
     const data = await res.json();
+    console.log('TMDB Response data:', JSON.stringify(data, null, 2));
 
-    return data?.results?.map(this.dtoToMovie) || [];
+    if (!data?.results) {
+      console.error('No results found in TMDB response');
+      return [];
+    }
+
+    return data.results.map(this.dtoToMovie);
   }
 
   private dtoToMovie(dto: MovieApiResponse): Movie {
