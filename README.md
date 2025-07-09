@@ -28,12 +28,17 @@ Essa abordagem facilita a escalabilidade, manutenção e testes, além de permit
 ## Screenshots do App Mobile
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
-  <img src="https://github.com/user-attachments/assets/a314232d-462e-4d2a-9449-e1505ffdb937" alt="Screenshot 2" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-  <img src="https://github.com/user-attachments/assets/ce620e95-7ca0-4f82-a832-68c56c1a9919" alt="Screenshot 1" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-   <img src="https://github.com/user-attachments/assets/af226764-3acd-4693-b88b-7e42802d49ee" alt="Screenshot 6" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-   <img src="https://github.com/user-attachments/assets/9d0c717d-055e-4551-bd93-0f352328ebb8" alt="Screenshot 5" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-  <img src="https://github.com/user-attachments/assets/2720758f-f28a-4d9e-8cf7-c9c65f885fee" alt="Screenshot 3" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-  <img src="https://github.com/user-attachments/assets/9bc014a6-0abc-4546-b267-55fbeb9efedb" alt="Screenshot 4" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/babda6af-5d14-4f75-8c8f-0ef21a55198e" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/c384007d-8bac-4e72-9a8e-3eaaf86216de" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/36b0a1ce-4221-4333-9747-395c73236dd7" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/e62f04b6-1c0e-4061-8cf8-0e58cf534af1" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+ 
+<img src="https://github.com/user-attachments/assets/a8bf1f88-841b-4181-86da-3279403cc85e" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+<img src="https://github.com/user-attachments/assets/58159ded-8019-48ea-84a6-dbaae4745708" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+<img src="https://github.com/user-attachments/assets/db545435-09c2-448d-acbb-f74c064447fb" width="300" height="650" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+
+
+
  
 </div>
 
@@ -42,8 +47,9 @@ Essa abordagem facilita a escalabilidade, manutenção e testes, além de permit
 ## Screenshots do App Web
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
-  <img src="https://github.com/user-attachments/assets/ff063956-3103-4938-9c1a-6c7b5b553f50" alt="Web Screenshot 2" width="600" height="320" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
-  <img src="https://github.com/user-attachments/assets/0b32939e-aad8-4eca-8d52-2c16c5a00136" alt="Web Screenshot 1" width="600" height="320" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/21c932c1-eafd-44e2-a47e-5ab7c6c8801c" alt="Web Screenshot 2" width="600" height="320" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  <img src="https://github.com/user-attachments/assets/7b27f251-212d-4bb5-a697-9a37997f51f5" alt="Web Screenshot 1" width="600" height="320" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+
 </div>
 
 ---
